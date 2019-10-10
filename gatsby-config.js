@@ -20,6 +20,7 @@ module.exports = {
         name: `assets`,
       },
     },
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -34,6 +35,7 @@ module.exports = {
         ],
       },
     },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -46,8 +48,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Snipcart Starter`,
-        short_name: `Gatsby Snipcart`,
+        name: `A Little Cattywampus`,
+        short_name: `Cattywampus`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `thistle`,
@@ -58,12 +60,13 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-snipcart',
+      resolve: "gatsby-plugin-snipcart",
       options: {
         //replace with own Snipcart API key
-        apiKey: 'MjQ2MDY4MDctMDZkYi00ZTY0LWFlODItNzhlMmEzZDg1NTBiNjM2OTc2Nzk1NjcwMTU3MTkx',
+        apiKey:
+          "MjQ2MDY4MDctMDZkYi00ZTY0LWFlODItNzhlMmEzZDg1NTBiNjM2OTc2Nzk1NjcwMTU3MTkx",
         autopop: true,
-          }
+      },
     },
     `gatsby-plugin-styled-components`,
   ],
