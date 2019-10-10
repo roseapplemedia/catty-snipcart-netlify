@@ -7,18 +7,18 @@ import HeaderMain from "./Headers/HeaderMain"
 import HeaderMinor from "./Headers/HeaderMinor"
 
 const PageWrapper = styled.div`
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
-  width: 90%;
+  width: 100vw;
 `
 
 const MainSection = styled.main`
   margin: 30px 0;
-  width: 100%;
+  width: 100vw;
 `
 
 const FooterStyled = styled.footer`
-  width: 100%;
+  width: 100vw;
   padding: 20px;
   text-align: right;
 
