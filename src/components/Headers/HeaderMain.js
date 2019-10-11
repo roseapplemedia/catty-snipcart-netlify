@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import NavBar from "../navbar/Navbar"
+import HeaderLogo from "../../images/alittlecattywampus.png"
 
 const HeaderMainStyled = styled.div`
   width: 100vw;
@@ -13,18 +14,15 @@ const HeaderMainStyled = styled.div`
   /* padding-top: 20px; */
 `
 
-const ShopName = styled.h1`
-  background: ${props => props.theme.colors.main};
-  padding: 20px;
-  width: 100vw;
-  color: white;
-  text-align: center;
-  font-family: Heebo, sans-serif;
-  /* border: 4px solid ${props => props.theme.colors.secondaryAccent}; */
-  font-size: 2.5em;
-  font-weight: 900;
-  @media (max-width: 600px) {
-    width: 100vw;
+const ShopName = styled.img`
+  display: flex;
+  background-image: url(${HeaderLogo});
+  width: 750px;
+  height: 250px;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  @media (max-width: 650px) {
+    display: none;
   }
 `
 
@@ -37,10 +35,12 @@ const LinkStyled = styled(Link)`
 const headerMain = props => {
   return (
     <HeaderMainStyled>
-      <NavBar></NavBar>
-      <ShopName>
-        <LinkStyled to="/">{props.shopName}</LinkStyled>
-      </ShopName>
+      <div>
+        <NavBar></NavBar>
+      </div>
+      <div>
+        <ShopName></ShopName>
+      </div>
     </HeaderMainStyled>
   )
 }
