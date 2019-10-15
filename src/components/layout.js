@@ -9,16 +9,15 @@ import HeaderMinor from "./Headers/HeaderMinor"
 const PageWrapper = styled.div`
   width: 100vw;
   margin: 0 auto;
-  width: 100vw;
 `
 
 const MainSection = styled.main`
-  margin: 30px 0;
+  margin: 20px 20px;
   width: 100vw;
 `
 
 const FooterStyled = styled.footer`
-  width: 100vw;
+  width: 95vw;
   padding: 20px;
   text-align: right;
 

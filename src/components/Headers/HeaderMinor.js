@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import { ShoppingCart } from "styled-icons/material/ShoppingCart"
 
 const HeaderMinorStyled = styled.div`
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +32,7 @@ const CartSummary = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 10px;
+  padding: 10px 20px;
   font-weight: bold;
 `
 
